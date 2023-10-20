@@ -1,0 +1,81 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "b1.csv",
+				"container": "db-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "crim",
+				"type": "String"
+			},
+			{
+				"name": "zn",
+				"type": "String"
+			},
+			{
+				"name": "indus",
+				"type": "String"
+			},
+			{
+				"name": "chas",
+				"type": "String"
+			},
+			{
+				"name": "nox",
+				"type": "String"
+			},
+			{
+				"name": "rm",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			},
+			{
+				"name": "dis",
+				"type": "String"
+			},
+			{
+				"name": "rad",
+				"type": "String"
+			},
+			{
+				"name": "tax",
+				"type": "String"
+			},
+			{
+				"name": "ptratio",
+				"type": "String"
+			},
+			{
+				"name": "black",
+				"type": "String"
+			},
+			{
+				"name": "lstat",
+				"type": "String"
+			},
+			{
+				"name": "medv",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
