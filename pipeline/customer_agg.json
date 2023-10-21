@@ -1,10 +1,10 @@
 {
 	"name": "customer_agg",
 	"properties": {
-		"description": "combining data from two tables and moving it into blank ",
+		"description": "combining data from two tables and moving it into a blank database",
 		"activities": [
 			{
-				"name": "Data flow1",
+				"name": "customer_agg_pipeline",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
